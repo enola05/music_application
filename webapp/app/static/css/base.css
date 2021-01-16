@@ -1,0 +1,106 @@
+    .loglabel{
+	  color:black;
+          font-size:25px;
+          font-weight:bolder;
+          
+	  
+     }
+     body{
+	     text-align:center;
+	     background-color:black;
+	     
+
+     }
+     #logdiv{
+	    background-color:white;
+	    width: 382px;
+            margin: auto; 
+      	    padding: 80px;
+            border-radius: 15px ;
+
+
+     }
+     .bbutton{
+	     background-color:white;
+	     display:inline-block;
+   	     font-weight:bold;
+   	     width:30%;
+             padding:4px;
+             text-align:center;
+             text-decoration:none;
+     }
+     .signinb{
+	     background-color:black;
+	     text-color:white;
+	     font-size:25px;
+	     font-weight:bold;
+	     
+     }
+     #regdiv{
+            background-color:white;
+            width: 550px;
+            margin: auto;
+            padding: 80px;
+            border-radius: 15px ;
+
+
+     }
+     form{
+		color:#000000;
+		font-weight:bold;
+	}
+	.bold{
+     		float:right;
+     		color:#FFFFFF;
+	}
+	.konkani{
+		color:#FFFFFF;
+	}
+
+#column1 {
+  float: left;
+  height: 87%;
+  width: 30%;
+  padding: 0 10px;
+  color:#FFFFFF;
+}
+
+#column2 {
+  
+  float: left;
+  height: 87%;
+  width: 30%;
+  padding: 0 10px;
+  color:#FFFFFF;
+}
+
+#column3 {
+  float: left;
+  height: 87%;
+  width: 28%;
+  padding: 0 10px;
+  color:#FFFFFF;
+}
+.link{
+  color:#FFFFFF;
+}
+.pdf{
+  float: center;
+  height: 80%;
+  width: 95%;
+  padding: 0 10px;
+  color:#FFFFFF;
+
+  
+}
+.mp3{
+  float:center;
+  width:95%;
+  height:10%;
+
+}
+
+
+
+
+

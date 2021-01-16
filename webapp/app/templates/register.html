@@ -1,0 +1,54 @@
+<{% extends "base.html" %}>
+<html>
+        <head>
+                <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base.css') }}">
+        </head>
+
+	<body>
+{% block content %}
+<div id="regdiv">
+    <h1 class="loglabel">Register</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p >
+	<label>{{ form.email.label }}</label>
+            {{ form.email(size=25) }}<br>
+            {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+	<p>
+	<label>{{ form.username.label }}</label>
+            {{ form.username(size=25) }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+	<label>{{ form.contact.label }}</label>
+            {{ form.contact(size=25) }}<br>
+            {% for error in form.contact.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+
+        <p>
+	<label>{{ form.password.label }}</label>
+            {{ form.password(size=25) }}<br>
+            {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+	<label>{{ form.password2.label }}</label>
+            {{ form.password2(size=25) }}<br>
+            {% for error in form.password2.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div>
+{% endblock %}
+</body>

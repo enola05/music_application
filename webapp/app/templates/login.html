@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/base.css') }}">
+	</head>
+	<body>
+{% block content %}
+<div>
+<div id="logdiv">
+   <h1 class="loglabel">Sign In</h1>
+   <form action="" method="post" novalidate>
+	   {{ form.hidden_tag() }}
+	   <p>
+	      {{ form.email.label }}
+	      {{ form.email(size=25) }}<br>
+	      {% for error in form.email.errors %}
+              <span style="color:red;">[{{ error }}]</span>
+	      {% endfor %}
+	   </p>
+	   <p>
+	      {{ form.password.label }}
+	      {{ form.password(size=25) }}<br>
+	      {% for error in form.password.errors %}
+	      <span style="color:red;">[{{ error }}]</span>
+              {% endfor %}
+           </p>
+	   <p>{{ form.remember_me() }}{{ form.remember_me.label }}</p>
+	   <p>{{ form.submit()}}</p>
+	   <p>NewUser? <a href="{{ url_for('register') }}">Click to Register!</a></p>
+   </form>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
+
+<!--p>New User? <a href="{{ url_for('register') }}">Click to Register!</a></p-->

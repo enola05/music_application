@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<div><p class="konkani"> Konkani Lyrics Application
+	<b class="bold"> user: {{ current_user.username }} </b> </p></div><hr>
+<main id="boxes">
+<div id="column1">
+	<a  class="link" href="{{ url_for('mog_tuzo_kitlo_ashelo') }}">Mog Tuzo Kitlo Ashelo</a>
+</div>
+<div id="column2">
+	<a class="link" href="{{ url_for('display') }}">Mog Tuzo Kitlo Ashelo</a>
+
+</div>
+<div id="column3">
+	<a class="link" href="{{ url_for('display') }}">Mog Tuzo Kitlo Ashelo</a>
+
+</div>
+</div>
+</main>
+{% endblock %}
